@@ -1,0 +1,23 @@
+{
+  "name": "write-file-server",
+  "version": "1.0.0",
+  "description": "A tiny Node.js web server application used to write data contents to files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web server",
+    "write",
+    "file"
+  ],
+  "author": "Cláudio de Castro",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blockchainofthings/WriteFileServer.git"
+  },
+  "bin": {
+    "writefilesrv": "index.js"
+  }
+}
