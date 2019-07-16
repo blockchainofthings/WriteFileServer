@@ -16,14 +16,11 @@ npm install -g write-file-server
 
 The following environment variables can be used the configure the application:
 
-- WRITEFILESRV_HOST
-    The local network address at which the web server will be listening for HTTP connections. Default: **localhost**
+- WRITEFILESRV_HOST - The local network address at which the web server will be listening for HTTP connections. Default: **localhost**
 
-- WRITEFILESRV_PORT
-    The TCP port to which the web server will be listening for HTTP connections. Default: **8889**
+- WRITEFILESRV_PORT - The TCP port to which the web server will be listening for HTTP connections. Default: **8889**
  
-- WRITEFILESRV_OUTDIR
-    The directory to which the files will be written. Relative paths are relative to the application's
+- WRITEFILESRV_OUTDIR - The directory to which the files will be written. Relative paths are relative to the application's
  install directory. Default: **./files**
 
 To run the application, just issue the command:
@@ -51,7 +48,7 @@ curl -X POST --data-binary "This is my file's contents." -H "Content-Type: text/
 
 > **Note**: if the file already exists, it will be overwritten.
 
-As an option, to send binary contents to be written to files, one may choose to base-64 encode the contents before
+As an option, to send binary contents to be written to files, one may choose to base64 encode the contents before
  posting it. In that case, a *Content-Type* HTTP header with the value `application/base64` should be sent.
 
 ```shell
